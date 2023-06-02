@@ -14,7 +14,7 @@ jobs:
         distribution: 'zulu'
         java-version: '8'
     - name: Unit test
-      uses: ./gradlew clean test
+      run: ./gradlew clean test
     - name: Integration test
-      uses: ./gradlew integTest
+      run: ./gradlew integTest
     
